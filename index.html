@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Req meta tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e32d5f4f68.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+  
+
+
+</head>
+
+<body>
+    <section id="head" class="text-black">
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <h2 class="center">School Admission Form</h2>
+                    <form role="form" name="Admission Form" class="col-md-10 go-right"  method="post">
+                        <div class="form-group">
+                            <label for="firstname">First Name</label>
+                            <input id="firstname" name="firstname" type="text" class="form-control" placeholder="Enter First Name"
+                                pattern="[A-Za-z]{1,20}" title="Only alphabet allowed (Amx length 20)" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Last Name</label>
+                            <input id="lastname" name="lastname" type="text" maxlength="20" class="form-control" placeholder="Enter Last Name"
+                            pattern="[A-Za-z]{1,20}" title="Only alphabet allowed (Amx length 20)"  required>
+                        </div>
+                        <div class="form-group">
+                            <label for="class">Class</label>
+                            <input id="class" name="class"  type="number" maxlength="2" class="form-control" placeholder="Enter Class"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Year of Passing</label>
+                            <input id="year" name="year" type="number"  max="2017" class="form-control"
+                              pattern="[0-9]+"  placeholder="Enter Passing Year" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="percentage">Percentage of Marks</label>
+                            <input id="percentage" name="percentage" type="mumber" max='100'  class="form-control"
+                              pattern="[0-9]+"  placeholder="Enter Percentage" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+</body>
+
+</html>
